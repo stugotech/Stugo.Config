@@ -1,0 +1,38 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stugo.Config", "Stugo.Config\Stugo.Config.csproj", "{7D26769A-9A9F-4588-8528-7E158B00C0C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3949CB4C-9CE5-4288-9609-D010902222C5}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		README.md = README.md
+		appveyor.yml = appveyor.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stugo.Config.Test", "Stugo.Config.Test\Stugo.Config.Test.csproj", "{1A869E5B-83E8-4120-981E-977220FDEC56}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		net40|Any CPU = net40|Any CPU
+
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D26769A-9A9F-4588-8528-7E158B00C0C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D26769A-9A9F-4588-8528-7E158B00C0C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D26769A-9A9F-4588-8528-7E158B00C0C4}.net40|Any CPU.ActiveCfg = net40|Any CPU
+		{7D26769A-9A9F-4588-8528-7E158B00C0C4}.net40|Any CPU.Build.0 = net40|Any CPU
+
+		{1A869E5B-83E8-4120-981E-977220FDEC56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A869E5B-83E8-4120-981E-977220FDEC56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A869E5B-83E8-4120-981E-977220FDEC56}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A869E5B-83E8-4120-981E-977220FDEC56}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Stugo.Config</id>
+    <version>$version$</version>
+    <authors>Stugo Ltd</authors>
+    <description>Utility classes for config</description>
+    <copyright>Copyright © Stugo Ltd 2016</copyright>
+  </metadata>
+  <files>
+    <file src="bin\net40\*.*" target="lib\net40" />
+  </files>
+</package>
