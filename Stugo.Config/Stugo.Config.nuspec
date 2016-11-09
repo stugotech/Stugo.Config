@@ -9,6 +9,5 @@
   </metadata>
   <files>
     <file src="bin\net40\Stugo.Config.dll" target="lib\net40\" />
-    <file src="bin\net45\Stugo.Config.dll" target="lib\net45\" />
   </files>
 </package>
