@@ -8,6 +8,9 @@ version: $(VERSION_NUMBER).{build}
 matrix:
   fast_finish: true
 
+init:
+  - ps: $env:FULL_VERSION="$($env:APPVEYOR_BUILD_VERSION)$($env:VERSION_PRE_TAG)"
+
 before_build:
   - cmd: nuget restore
 
@@ -15,7 +18,7 @@ build_script:
   - cmd: |
       msbuild /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /p:Configuration=net40 /m
       mkdir %PROJECT_NAME%\bin\nupkg
-      nuget pack %PROJECT_NAME%\%PROJECT_NAME%.nuspec -OutputDirectory %PROJECT_NAME%\bin\nupkg\ -Version "%APPVEYOR_BUILD_VERSION%"
+      nuget pack %PROJECT_NAME%\%PROJECT_NAME%.nuspec -OutputDirectory %PROJECT_NAME%\bin\nupkg\ -Version "%FULL_VERSION%"
 
 artifacts:
   - path: $(PROJECT_NAME)\bin\nupkg\*.nupkg
@@ -25,7 +28,7 @@ assembly_info:
   file: VersionInfo.cs
   assembly_version: '{version}'
   assembly_file_version: '{version}'
-  assembly_informational_version: '$(VERSION_NUMBER)$(VERSION_PRE_TAG)'
+  assembly_informational_version: '$(FULL_VERSION)+$(APPVEYOR_REPO_COMMIT)'
 
 nuget:
   account_feed: true
