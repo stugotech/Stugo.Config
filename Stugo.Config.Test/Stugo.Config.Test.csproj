@@ -51,7 +51,7 @@
     <Compile Include="..\Stugo.Config\Properties\VersionInfo.cs">
       <Link>Properties\VersionInfo.cs</Link>
     </Compile>
-    <Compile Include="Registry\RegistrySettingsTest.cs" />
+    <Compile Include="Registry\RegistryConfigProviderTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

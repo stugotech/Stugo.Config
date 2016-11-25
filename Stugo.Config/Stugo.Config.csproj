@@ -36,7 +36,11 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Registry\RegistrySettings.cs" />
+    <Compile Include="ConfigProviderExtensions.cs" />
+    <Compile Include="IConfigProvider.cs" />
+    <Compile Include="Registry\RegistryConfigProvider.cs" />
+    <Compile Include="Registry\RegistryHiveConverter.cs" />
+    <Compile Include="Registry\RegistryViewConverter.cs" />
     <None Include="Stugo.Config.nuspec" />
     <Compile Include="Properties\GlobalAssemblyInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
